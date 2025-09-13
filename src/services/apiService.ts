@@ -1,6 +1,4 @@
-const API_BASE_URL = window.location.protocol === 'https:' 
-  ? 'https://localhost:5000/api' 
-  : 'http://localhost:5000/api';
+const API_BASE_URL = 'http://localhost:5000/api';
 
 export interface LiveGame {
   gameId: string;
