@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint .",
+    "preview": "vite preview",
+    "dev:server": "cd server && node server.js",
+    "dev:full": "concurrently \"npm run dev\" \"npm run dev:server\""
     "preview": "vite preview",
     "server": "node server/server.js",
     "seed": "node server/scripts/seedData.js",
